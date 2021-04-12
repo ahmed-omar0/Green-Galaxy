@@ -49,6 +49,7 @@
     let home_slide = $('.owl-carousel');
     home_slide.owlCarousel({
       items: 1,
+      loop:true,
       autoplay: true,
       autoplayTimeout: 5000,
       navText: [" <i class='fas fa-arrow-circle-left'></i> ", "<i class='fas fa-arrow-circle-right'></i> "],
