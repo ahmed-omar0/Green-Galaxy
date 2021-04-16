@@ -21,30 +21,6 @@
           zIndex: 10,
         })
     })
-    // Change Active Class
-      let locationhref = window.location.href;
-      if(locationhref.indexOf('index') != -1){
-        $('header#navbar .nav-item').first().addClass('active')
-      } else if(locationhref.indexOf('products') != -1){
-        $('header#navbar .nav-item:nth-of-type(2)').addClass('active')
-      } else if(locationhref.indexOf('about') != -1){
-        $('header#navbar .nav-item:nth-of-type(3)').addClass('active')
-      } else if(locationhref.indexOf('contact') != -1){
-        $('header#navbar .nav-item').last().addClass('active')
-      }
-      else {
-        $('header#navbar .nav-item').removeClass('active')
-      }
-    // Modal Activation
-      $('#search-switch').on('click', function (){
-        $('.search-model-box').fadeIn(400);
-      });
-
-      $('.search-close-btn').on('click', () => {
-        $('.search-model-box').fadeOut(400, () => {
-            $('#search-input').val('');
-        });
-      });
 /* 3.OWL Carousel */
     let home_slide = $('.owl-carousel');
     home_slide.owlCarousel({
